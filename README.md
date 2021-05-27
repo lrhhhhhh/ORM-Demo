@@ -60,8 +60,6 @@ db.create_all()
 ### 插入数据
 
 ```python
-import bdb
-
 s1 = Student(
     username=f'lrh',
     age=24,
