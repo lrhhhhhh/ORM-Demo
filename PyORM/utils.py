@@ -1,6 +1,6 @@
 import pymysql
 import logging
-from SimpleORM.sql import sql_map
+from PyORM.sql import sql_map
 
 
 def create_engine(user='', password='', host='localhost', port=3306, **kwargs):

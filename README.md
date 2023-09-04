@@ -1,8 +1,8 @@
-## SimpleORM
-SimpleORM is a simple Object-Relational Mapper(ORM) 
+## PyORM
+PyORM is a simple Object-Relational Mapper(ORM) 
 implemented by Python's technology which named metaclass and descriptor
 
-SimpleORM是基于mysql数据库设计的一个简单的对象关系映射框架，API风格和flask-sqlalchemy类似，但并没有参考其具体实现。
+PyORM是基于mysql数据库设计的一个简单的对象关系映射框架，API风格和flask-sqlalchemy类似，但并没有参考其具体实现。
 纯粹的看API猜如何实现，这是一个为了造轮子而造的轮子。
 
 ## Features
@@ -16,19 +16,19 @@ SimpleORM是基于mysql数据库设计的一个简单的对象关系映射框架
 
 
 ## 安装依赖
-SimpleORM仅仅依赖`pymysql`, 请先安装
+PyORM仅仅依赖`pymysql`, 请先安装
 ```shell
 pip install pymysql
 ```
 
 
 ## 快速开始
-以下例子均来自`example/example.py`。
+以下例子均来自 `example/example.py`。
 
 ### 配置与初始化ORM对象
 ```python
-from SimpleORM import SimpleORM
-db = SimpleORM(
+from PyORM import PyORM
+db = PyORM(
     user='root',
     password='123456',
     database='test_orm',

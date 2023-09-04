@@ -1,5 +1,5 @@
-from SimpleORM.sql import sql_map
-from SimpleORM.utils import execute_sql
+from PyORM.sql import sql_map
+from PyORM.utils import execute_sql
 
 
 class QueryDescriptor:

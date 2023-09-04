@@ -1,9 +1,9 @@
-from SimpleORM.orm import Model
-from SimpleORM.utils import create_engine
-from SimpleORM.session import Session
+from PyORM.orm import Model
+from PyORM.utils import create_engine
+from PyORM.session import Session
 
 
-class SimpleORM:
+class PyORM:
     def __init__(
             self,
             user='',
@@ -23,7 +23,7 @@ class SimpleORM:
         self.config['autocommit'] = autocommit
         self.config.update(kwargs)
 
-        # self.Model = type('SimpleORM.Model', Model.__bases__, dict(Model.__dict__))
+        # self.Model = type('PyORM.Model', Model.__bases__, dict(Model.__dict__))
         self.Model = Model
         self.session = Session(config=self.config)
 

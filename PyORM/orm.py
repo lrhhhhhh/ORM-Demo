@@ -1,8 +1,8 @@
 from abc import ABCMeta
-from SimpleORM.fields import Field, NoneValue
-from SimpleORM.sql import sql_map
-from SimpleORM.query import Query, QueryDescriptor
-from SimpleORM.utils import execute_sql
+from PyORM.fields import Field, NoneValue
+from PyORM.sql import sql_map
+from PyORM.query import Query, QueryDescriptor
+from PyORM.utils import execute_sql
 
 
 class ModelMeta(ABCMeta):

@@ -1,8 +1,8 @@
 import logging
 from contextvars import ContextVar
-from SimpleORM.fields import NoneValue
-from SimpleORM.utils import create_engine
-from SimpleORM.sql import sql_map
+from PyORM.fields import NoneValue
+from PyORM.utils import create_engine
+from PyORM.sql import sql_map
 
 
 class Session:

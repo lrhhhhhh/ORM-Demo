@@ -2,11 +2,12 @@ import time
 import datetime
 import logging
 
-from SimpleORM import SimpleORM
-from SimpleORM.fields import Integer, Double, String, Boolean, Date, DateTime, TimeStamp
+from PyORM import PyORM
+from PyORM.fields import Integer, Double, String, Boolean, Date, DateTime, TimeStamp
 
 logging.basicConfig(level=logging.DEBUG)
-db = SimpleORM(
+
+db = PyORM(
     user='root',
     password='123456',
     database='test_orm',
